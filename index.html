@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrary </title>
+    <meta name="description"
+        content="Contrary is a vibrant Discord server and the home of the Contrary Downloader. It provides every game available for Windows OS along with automated fixes as a modern tech tool.">
+    <!-- Google Fonts Component -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="glass-navbar">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Contrary Icon" class="nav-logo">
+            <span class="logo-text">Contrary</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#downloader">Downloader</a>
+            <a href="#support">Support</a>
+        </nav>
+        <a href="https://discord.gg/Contrary" target="_blank" class="btn btn-primary"><i class="fab fa-discord"></i>
+            Join
+            Discord</a>
+    </header>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="gradient-text">Welcome to <br>Contrary</h1>
+                <p class="subtitle">Join the elite Discord community. We are the ultimate hub for all type of gamers and
+                    tech individuals, powered by state-of-the-art tools and a passionate community.</p>
+                <div class="cta-group">
+                    <a href="#downloader" class="btn btn-secondary">Explore Contrary Downloader </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="image-wrapper">
+                    <!-- Assumes user has saved their Peacock image as logo.png in the same directory -->
+                    <img src="logo.jpg" alt="Contrary Main Logo" class="main-hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Downloader Section -->
+        <section id="downloader" class="downloader-section glass-panel">
+            <div class="section-header">
+                <h2>Contrary <span class="gradient-text-alt">Downloader</span></h2>
+                <p class="badge">The Ultimate Library</p>
+            </div>
+            <div class="downloader-content">
+                <div class="downloader-info">
+                    <p class="description">
+                        The Ultimate Tool for PC gamers. Contrary Downloader is meant to securely download every
+                        single game available for Windows, seamlessly providing automated updates, game fixes, and
+                        game bypasses and activations.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Complete Steam Games Library</li>
+                        <li><i class="fas fa-wrench"></i> Automated Game Fixes And Bypasses</li>
+                        <li><i class="fas fa-bolt"></i> Blazing Fast Bandwidth</li>
+                        <li><i class="fas fa-microchip"></i> Modern, Lightweight And Reliable Tool</li>
+                    </ul>
+                    <a href="https://drive.google.com/file/d/1Quuaj8VL3d5npuAchuiwDYCxDPGd0zmH/view?usp=sharing"
+                        target="_blank" class="btn btn-primary d-link"><i class="fas fa-download"></i> Download
+
+                        v1.0.1</a>
+                </div>
+                <div class="downloader-ui-mockup">
+                    <div class="mockup-window glass">
+                        <div class="mockup-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="mockup-body">
+                            <i class="fas fa-gamepad glowing-icon"></i>
+                            <h3>Initializing Download...</h3>
+                            <div class="progress-bar">
+                                <div class="fill"></div>
+                            </div>
+                            <p class="mock-status">Fetching game library configuration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Section -->
+        <section id="support" class="support-section">
+            <h2>Support <span class="gradient-text">Our Work</span></h2>
+            <p>Help us maintain the servers and continue development of our tools. Your donations keep Contrary alive.
+            </p>
+            <div class="donation-options">
+                <!-- PayPal -->
+                <div class="donation-card glass-panel hover-lift">
+                    <i class="fab fa-paypal"></i>
+                    <h3>PayPal</h3>
+                    <p>Fast & Secure Global Payments</p>
+                    <button class="btn btn-outline" onclick="openModal('paypalModal')">Donate via PayPal</button>
+                </div>
+                <!-- UPI -->
+                <div class="donation-card glass-panel hover-lift">
+                    <i class="fas fa-qrcode"></i>
+                    <h3>UPI</h3>
+                    <p>Instant Transfers for India</p>
+                    <button class="btn btn-outline" onclick="openModal('upiModal')">Scan QR / Details</button>
+                </div>
+                <!-- Crypto -->
+                <div class="donation-card glass-panel hover-lift">
+                    <i class="fab fa-bitcoin"></i>
+                    <h3>Crypto</h3>
+                    <p>BTC, ETH, USDT Accepted</p>
+                    <button class="btn btn-outline" onclick="openModal('cryptoModal')">Wallet Info</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with specified titles -->
+    <footer>
+        <div class="footer-content">
+            <h2 class="footer-brand"><span class="gradient-text">Contrary</span></h2>
+            <p class="footer-summary">Where every gamer belongs. A tight-knit community built on respect, chill vibes,
+                and endless gaming.</p>
+
+            <div class="socials">
+                <a href="https://discord.gg/Contrary" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://github.com/Contrary7nit" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCdaSD6pFI4FSNuiPLDOmR8g/" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="copyright-bar">
+                <p>© 2026 Contrary Server & Downloader. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="paypalModal" class="modal-overlay" onclick="if(event.target === this) closeModal('paypalModal')">
+        <div class="modal-content glass-panel">
+            <span class="close-modal" onclick="closeModal('paypalModal')">&times;</span>
+            <i class="fab fa-paypal modal-icon"></i>
+            <h2>PayPal <span class="gradient-text">Donation</span></h2>
+            <div class="paypal-steps">
+                <p><strong><i class="fas fa-paper-plane" style="color: var(--purple-light);"></i> 1.
+                        Destination:</strong> Send your support to: <br><code
+                        class="highlight-code">cjeet200@gmail.com</code></p>
+                <p><strong><i class="fas fa-exclamation-circle" style="color: var(--peach);"></i> 2.
+                        Requirement:</strong> You must select <strong>"Friends & Family"</strong>.</p>
+                <p><strong><i class="fab fa-discord" style="color: #5865F2;"></i> 3. Verification:</strong> Drop a
+                    screenshot of your transaction in our Discord server.</p>
+            </div>
+            <a href="https://paypal.me/yourid" target="_blank" class="btn btn-primary d-link">Open PayPal</a>
+        </div>
+    </div>
+
+    <div id="upiModal" class="modal-overlay" onclick="if(event.target === this) closeModal('upiModal')">
+        <div class="modal-content glass-panel">
+            <span class="close-modal" onclick="closeModal('upiModal')">&times;</span>
+            <i class="fas fa-qrcode modal-icon"></i>
+            <h2>UPI <span class="gradient-text">Transfer</span></h2>
+            <div class="paypal-steps">
+                <p><strong><i class="fas fa-mobile-alt" style="color: var(--purple-light);"></i> 1. Direct
+                        Transfer:</strong> Send to our official UPI VPA: <br><code
+                        class="highlight-code">hvsinghvardhanharsh@oksbi</code></p>
+                <p><strong><i class="fas fa-comment-dots" style="color: var(--peach);"></i> 2. Message:</strong> Include
+                    your Discord Username in the payment notes.</p>
+                <p><strong><i class="fab fa-discord" style="color: #5865F2;"></i> 3. Verification:</strong> Share your
+                    payment success screenshot in our Discord!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="cryptoModal" class="modal-overlay" onclick="if(event.target === this) closeModal('cryptoModal')">
+        <div class="modal-content glass-panel">
+            <span class="close-modal" onclick="closeModal('cryptoModal')">&times;</span>
+            <i class="fab fa-bitcoin modal-icon"></i>
+            <h2>Crypto <span class="gradient-text">Donation</span></h2>
+            <div class="paypal-steps">
+                <p><strong><i class="fas fa-wallet" style="color: #F3BA2F;"></i> Binance Pay ID:</strong> <br><br><code
+                        class="highlight-code">904578255</code></p>
+                <p style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;"><strong><i
+                            class="fab fa-discord" style="color: #5865F2;"></i> Verification:</strong> Drop a screenshot
+                    of your Binance payment success in our Discord server!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
